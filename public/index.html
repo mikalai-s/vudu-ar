@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Vudu AR</title>
+  <style>
+    body {
+      margin: 0px;
+      overflow: hidden;
+    }
+  </style>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </script>
+</head>
+
+<body>
+  <a-scene embedded arjs >
+    <a-marker preset="hiro">
+      <a-box position='0 0.5 0' material='color: black;'></a-box>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
